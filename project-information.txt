@@ -1,0 +1,29 @@
+ Personalized Learning Path Chatbot using LangChain.js
+📌 Project Summary
+This project is an AI-powered conversational learning assistant that engages with users, tracks their progress, and provides personalized guidance based on their learning level and history. It uses LangChain.js, OpenAI GPT, MongoDB, and ConversationSummaryMemory to build intelligent memory-based conversations.
+
+💡 What It Does
+Chat Interface with AI Tutor
+
+Users can ask questions related to a specific topic (e.g., JavaScript, Python, AI).
+
+The AI provides helpful answers and suggestions.
+
+Memory-Driven Conversations
+
+Using ConversationSummaryMemory, the chatbot remembers previous chats.
+
+This allows the bot to tailor responses based on what the user already knows.
+
+Personalized Learning Path
+
+It stores interactions in MongoDB or memory to track what topics the user has discussed.
+
+The bot adapts the learning plan and recommends the next best topic to study.
+
+Suggestions and Progress
+
+Based on the user’s level and queries, the AI gives study tips, summaries, and next steps.
+
+It also provides feedback like “You seem comfortable with arrays. Want to explore recursion”
+
