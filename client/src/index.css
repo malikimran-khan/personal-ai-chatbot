@@ -1,1 +1,50 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary: #6366f1;
+  --color-secondary: #8b5cf6;
+  --color-accent: #14b8a6;
+  --color-bg-light: #ffffff;
+  --color-bg-glass: rgba(255, 255, 255, 0.4);
+  
+  --font-sans: 'Outfit', 'Inter', sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+    font-family: 'Outfit', sans-serif;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-bg-glass backdrop-blur-xl border border-white/60 shadow-xl;
+  }
+  
+  .glass-card {
+    @apply glass rounded-[2.5rem] p-8 transition-all duration-500;
+  }
+
+  .text-glow-light {
+    text-shadow: 0 0 20px rgba(99, 102, 241, 0.2);
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-br from-indigo-600 via-violet-600 to-teal-500;
+  }
+
+  .message-shadow {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+  }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(1deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+.animate-float {
+  animation: float 8s ease-in-out infinite;
+}
