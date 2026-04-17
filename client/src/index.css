@@ -23,7 +23,7 @@
   }
   
   .glass-card {
-    @apply glass rounded-[2.5rem] p-8 transition-all duration-500;
+    @apply bg-bg-glass backdrop-blur-xl border border-white/60 shadow-xl rounded-[2.5rem] p-8 transition-all duration-500;
   }
 
   .text-glow-light {
